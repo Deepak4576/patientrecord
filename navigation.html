@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<HTML>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Navigation bar</title>
+        <style>
+            body{
+                background-color:cornflowerblue;
+                background-image: url("image/color-smoke.gif");
+                background-position: fixed;
+                background-repeat: no-repeat;
+                 height:auto;
+                 background-size: cover;
+                 background-position:fixed;
+            }
+            ul{
+              background-color:white;
+              background-image:url("image/66cf81f2733909e97d7ef40ec56e01bf.jpg");
+              width:160;
+              height:100%;
+              padding:0;
+              margin:0;
+              position:fixed;
+              overflow:auto;
+              z-index: 1;
+            }
+            li a{
+             display:block;
+             padding:13px;
+             color:black;
+             text-decoration: none;
+              margin:5px;
+            }
+            li a:hover{
+                display:block;
+                background-color:darkgray;
+            }
+            li a.Acctive{
+                background-color:springgreen;
+                
+            }
+            form{
+               margin-left:40%;
+            }
+            .search{
+                width:450px;
+                height:45px;
+                border:3px solid white;
+                border-radius: 14px;
+                background-color:whitesmoke;
+                margin-top:45px;
+                font-size: 17px;;
+            }
+        </style>
+        <script>
+            function logout()
+            {
+                window.alert("Are you sure ?");
+            }
+        </script>
+    </head>
+    <body>
+        <p id="clk"></p>
+        <ul>
+            <li><a class=Acctive href=navigation.html>DASHBOARD</a></li> 
+           <li><a href=add.html>ADD</a></li> 
+           <li><a href=nview.php>VIEW </a></li>
+           <li><a href=about.html>ABOUT</a></li>
+           <li><a href=login.html id="clk" onclick="return logout()">LOGOUT</a></li>
+        
+          
+        </ul>
+        <form action="search.php" method="POSt">
+            <p><input class="search" type="search" id="serch" name="serh" placeholder="Search..."></p>
+        </form>
+       
+    </body>
+</HTML>

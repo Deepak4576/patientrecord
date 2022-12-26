@@ -1,0 +1,114 @@
+<!DOCTYPE >
+<html>
+    <head>
+          
+        <title>Signup</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+              body{
+                 background-image:url("image/hospital.gif");
+                 background-repeat: no-repeat;
+                 height:100%;
+                 background-size: cover;
+                 background-position: center;
+              }
+              form{
+              margin-top: 10%;
+              margin-left: 42%;
+              padding :15px;
+              border:solid 2px #000000;
+              border-radius: 10px;
+               width:330px;
+               height:430px;
+               background-color: aqua;
+            }
+            .hname{
+               width:250px;
+              height:40px;
+              border-radius: 5px;
+              padding:7px;
+              margin-top: 1px;
+              margin-bottom: 0px;
+              margin-left:25px;
+              text-size-adjust: 20px;
+              border-width: 2px;
+              color:black;
+              font-size:17px ;
+            }
+           .mail{
+              width:250px;
+              height:40px;
+              border-radius: 5px;
+              padding:10px;
+              margin-top: 0px;
+              margin-bottom: 8px;
+              margin-left:25px;
+              text-size-adjust: 20px;
+              border-width: 2px;
+              color:black;
+              font-size:17px ;
+           }
+           .pass{
+              width:250px;
+              height:40px;
+              border-radius: 5px;
+              padding:10px;
+              margin-top: 2px;
+              margin-bottom: 15px;
+              margin-left:25px;
+              text-size-adjust: 20px;
+              border-width: 2px;
+              color:black;
+              font-size:17px ;
+           }
+           .btn{
+              margin-left:80px; 
+              width:100px;
+              height: 38px;
+              border-radius: 5px;
+              border:solid 2px black;
+              background-color:rgba(255, 0, 0, 0.711);
+              color:black;
+              font-size: 16px;
+              margin-top:2px;
+           }
+          h2{
+             margin-left:20px;
+             margin-top:5px;
+             margin-bottom:3px;
+             font-size:32px;
+          }
+          h3{
+             font-size:medium;
+             color:red;
+             margin-left:24px;
+             margin-top:1px;
+             font-size:17px
+          }
+          strong{
+             color:blue;
+             text-decoration: underline;
+             font-size:15px
+          }
+        </style>
+    </head>
+    <body>
+     
+       <form action="signup.php" method="POST">
+         <h2>Signup</h2>
+         <label for="hname"></label>
+         <p><input type="text" id="hname" class="hname" name="hosp" placeholder="Hospital name" required></p>
+           <label for="usr"></label>
+          <br> <input class="mail" type="text" id="usr" name="hid" placeholder="Hospital ID" required></br>
+          <label for="password"></label>
+          <p><input class="pass" type="password" id="paswrd" name="pass" placeholder="Password" required></p>
+          <label for="cnfrmpas"></label>
+          <p><input class="pass" type="password" id="cnfrmpas" name="cnfrmpas" placeholder="Confirm Password" required></p>
+          <h3>By creating an account you agree to our <strong>Terms & Privacy</strong></h3>
+         <p></p> <label for="submt"></label></p>
+          <button class="btn">Register</button>
+         
+       </form> 
+    </body>
+</html>

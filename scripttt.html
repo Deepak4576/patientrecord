@@ -1,0 +1,32 @@
+<DOCTYPE>
+<Html>
+    <head>
+    <script>
+        function fun()
+        {
+       x=document.forms["frm"]["fnm"].value;
+       flag=false;
+       for(let i=0;i<x.length;i++)
+       {
+       if(x[i]>='a'&&x[i]<='z'&&x[i]!="")
+       {
+       flag=true;
+       }
+       else
+       {
+        alert("not valid");
+       return 0;
+       }
+       }
+       }
+        
+    </script>
+    </head>
+    <body>
+        <p id="test"></p>
+        <form id="frm" >
+         fname :<input type="text" id="fnm" onmouseout="return fun() ">
+         <input type="submit">
+        </form>
+    </body>
+</Html>
