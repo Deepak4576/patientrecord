@@ -1,0 +1,150 @@
+<!DOCTYPE >
+<html>
+    <head>
+          
+        <title>Signup</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+              body{
+               
+                 background-image: url("image/hospital_img.jpeg");
+                 background-repeat: no-repeat;
+                 height:100%;
+                 background-size: cover;
+                 
+              }
+              form{
+              margin-top: 15%;
+              margin-left: 39%;
+              padding :15px;
+              border:solid 4px #000000;
+              border-radius: 10px;
+               width:330px;
+               height:230px;
+               background-color:rgba(9, 4, 0, 0.46);
+              background-position:center;
+            }
+            .hname{
+               width:250px;
+              height:40px;
+              border-radius: 5px;
+              padding:7px;
+              margin-top: 1px;
+              margin-bottom: 0px;
+              margin-left:25px;
+              text-size-adjust: 20px;
+              border-width: 2px;
+              color:black;
+              font-size:17px ;
+            }
+           .mail{
+              width:250px;
+              height:40px;
+              border-radius: 5px;
+              padding:10px;
+              margin-top: 0px;
+              margin-bottom: 8px;
+              margin-left:25px;
+              text-size-adjust: 20px;
+              border-width: 2px;
+              color:black;
+              font-size:17px ;
+           }
+           .pass{
+              width:250px;
+              height:40px;
+              border-radius: 5px;
+              padding:10px;
+              margin-top: 2px;
+              margin-bottom: 15px;
+              margin-left:25px;
+              text-size-adjust: 20px;
+              border-width: 2px;
+              color:black;
+              font-size:17px ;
+           }
+           .btn{
+              margin-left:23px; 
+              width:100px;
+              height: 38px;
+              border-radius: 5px;
+              border:solid 2px black;
+              background-color:rgba(4, 185, 67, 0.99);
+              color:black;
+              font-size: 16px;
+              margin-top:2px;
+           }
+          h2{
+             margin-left:20px;
+             margin-top:5px;
+             margin-bottom:3px;
+             font-size:32px;
+             color:blue;
+          }
+        
+          
+          h4{
+            text-align:right;
+            margin-top: -29px;;
+            margin-right:30px;
+           
+          }
+          .reg{
+           color:rgb(246, 11, 11);
+           font-size:20px;
+          }
+          #usrr{
+             margin-left:700px;
+            font-size: 2px;
+             margin-top:5px;
+             margin-bottom:13px;
+             font-size:32px;
+             color:rgb(234, 7, 7);
+          }
+          #pass{
+             margin-left:560px;
+            font-size: 2px;
+             margin-top:5px;
+             margin-bottom:13px;
+             font-size:32px;
+             color:rgb(234, 7, 7);
+          }
+        </style>
+        <script>
+         function inputvalid()
+         {
+            x=document.forms["frm"]["usr"].value;
+            if(x.length<5)
+             window.alert("Enter valid hospital id");
+            else
+            document.getElementById("usrr").innerHTML="";
+         }
+         function validpass()
+         {
+            p=document.forms["frm"]["paswrd"].value;
+            if(p.length<8)
+            window.alert("Password must contain 8 characters and atleast one letter")
+            else
+            document.getElementById("usrr").innerHTML="";
+         }
+        </script>
+    </head>
+    <body>
+     
+       <form action="login.php" method="POST" id="frm">
+         <h2>Login</h2>
+         <label for="usr" ></label>
+          <br> <input class="mail" type="text" id="usr" name="hid" placeholder="Hospital ID" onmouseout="inputvalid()" required></br>
+          <label for="paswrd"></label>
+          <p><input class="pass" type="password" id="paswrd" name="pass" placeholder="Password" onmouseout="validpass()" required></p>
+         <p></p> <label for="submt"></label></p>
+          <button class="btn" >login</button> 
+          
+          <h4><a class="reg" href=signup.html>Signup</a></h3>
+            
+       </form> 
+       <h3 id="usrr"></h3>
+       <h4 id="paas"></h4>
+    </body>
+</html>
